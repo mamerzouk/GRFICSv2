@@ -164,10 +164,10 @@ elif [ "$opt" = "Simulink" ]; then
 else
 	#clear
 	echo bad option
-fi	echo [OPENPLC]
-	cd ..
-	./build_core.sh
-	exit
+fi	#echo [OPENPLC]
+#	cd ..
+#	./build_core.sh
+#	exit
 #else
 #	#clear
 #	echo bad option
