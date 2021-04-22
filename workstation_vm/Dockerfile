@@ -8,4 +8,4 @@ RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 
 EXPOSE 22
 
-CMD /usr/sbin/sshd -D -o ListenAddress=0.0.0.0s
+CMD /usr/sbin/sshd -D -o ListenAddress=0.0.0.0
