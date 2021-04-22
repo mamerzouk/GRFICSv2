@@ -6,6 +6,6 @@ RUN echo 'root:root' | chpasswd
 
 RUN echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
 
-RUN service ssh start
-
 EXPOSE 22
+
+CMD /usr/sbin/sshd -D -o ListenAddress=0.0.0.0s
