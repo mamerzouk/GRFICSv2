@@ -10,6 +10,8 @@ RUN ssh-keygen -A
 
 RUN mkdir -p /run/sshd
 
+COPY ./plc /plc
+
 EXPOSE 22
 
 CMD /usr/sbin/sshd -D -o ListenAddress=0.0.0.0
