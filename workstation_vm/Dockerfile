@@ -10,6 +10,10 @@ RUN ssh-keygen -A
 
 RUN mkdir -p /run/sshd
 
+COPY ./usernames.txt .
+
+COPY ./passwords.txt .
+
 COPY ./plc /plc
 
 EXPOSE 22
