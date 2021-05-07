@@ -10,9 +10,9 @@ RUN ssh-keygen -A
 
 RUN mkdir -p /run/sshd
 
-COPY ./usernames.txt .
+COPY ./usernames.txt /root/
 
-COPY ./passwords.txt .
+COPY ./passwords.txt /root/
 
 COPY ./plc /plc
 
